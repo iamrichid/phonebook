@@ -1,16 +1,17 @@
 const express = require('express')
 const app = express()
+const data = require('../phonebook_data/data.json')
 const port = 5000
 
-let count = 0;
+app.set('view engine', 'ejs')
 
 app.get('/', (req , res) => {
-    res.send('hello World')
+    const phonebook = Object.values(data.phonebook);
+    res.render('index', {phonebook})
 })
 
 app.get('/api', (req , res)=> {
-    ++count;
-    res.json({count})
+    res.json(data)
 })
 app.listen(port , () => {
     console.log(`Example app listening on port ${port}`)

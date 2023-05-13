@@ -1,0 +1,64 @@
+{
+   "phonebook" : [ { 
+    "user" : "philomina", 
+    "number" : 523443434
+    },
+    
+    { "user" : "johnsmith",
+    "number" : 123456789},
+    
+    { "user" : "janedoe",
+    "number" : 555555555},
+    
+    { "user" : "samjones",
+    "number" : 987654321},
+    
+    { "user" : "ashleybrown",
+    "number" : 444444444},
+    
+     { "user" : "mikegreen",
+    "number" : 777777777},
+    
+    { "user" : "laurenwilson",
+    "number" : 999999999},
+    
+    { "user" : "peterlee",
+    "number" : 111111111},
+    
+    { "user" : "davidkim",
+    "number" : 222222222},
+    
+    { "user" : "melissalopez",
+    "number" : 333333333},
+    
+    { "user" : "chrisnguyen",
+    "number" : 444444444},
+    
+    { "user" : "katetaylor",
+    "number" : 555555555},
+    
+    { "user" : "ryanmiller",
+    "number" : 666666666},
+    
+    { "user" : "jessicachen",
+    "number" : 777777777},
+    
+    { "user" : "briannguyen",
+    "number" : 888888888},
+    
+    { "user" : "jenniferwang",
+    "number" : 999999999},
+    
+    { "user" : "kevinchoi",
+    "number" : 34344543434},
+    
+    { "user" : "lisamartinez",
+    "number" : 112233445},
+    
+    { "user" : "albertofernandez",
+    "number" : 334455667},
+    
+    { "user" : "sarahjones",
+    "number" : 889911223}
+]
+}

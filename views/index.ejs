@@ -8,12 +8,31 @@
     <title>My phonebook </title>
 </head>
 <body>
+
+    <!-- a link to create a new phonebook user -->
+
+    <div class="container">
+    <a href="/new_phonebook" class="m-2 btn btn-primary" aria-current="true">
+            Add a new Person
+    </a>   
+    
+    <!-- display all phone book names here -->
     <% const eachperson = phonebook.map((pb) => { %>
          
     <ul class="list-group">
-        <li class="list-group-item"> <%= pb.user %>  | <%= pb.number %>  </li>
-      </ul>
+        <li class="d-flex m-2 justify-content-between text-align-center list-group-item">
+            
+            <h5 class="align-self-center m-0"><%= pb.firstName %>  <%= pb.lastName %></h5> 
+            <div>
+            <a href='/edit_phonebook/<%=pb.id %>' class="btn btn-outline-warning" aria-current="true">
+            edit </a>
+            <a href='/delete_phonebook/<%=pb.id %>' class="btn btn-outline-danger" aria-current="true">
+                delete </a>
+        </div>
+        </li>
+    </ul>
 
     <%}); %>
+    </div>
 </body>
 </html>

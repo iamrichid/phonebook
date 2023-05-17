@@ -11,11 +11,11 @@
     
         <form action="/update-form"  method="POST">
             <label for="name">Firstname:</label>
-            <input type="numner" name="id" id="id" value="<%= phonebook.id %>"  class="visually-hidden"> 
-            <input type="text" name="firstname" id="firstname" value="<%= phonebook.firstName %>">  
+            <input type="numner" name="id" id="id" value="<%= contact.id %>"  class="visually-hidden"> 
+            <input type="text" name="firstname" id="firstname" value="<%= contact.firstName %>">  
             
             <label for="lastname">Lastname:</label>
-            <input type="text" name="lastname" id="lastname" value="<%= phonebook.lastName %>">
+            <input type="text" name="lastname" id="lastname" value="<%= contact.lastName %>">
             
             <button type="submit" class="btn btn-danger">update</button>
             

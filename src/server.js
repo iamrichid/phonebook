@@ -30,14 +30,14 @@ app.get('/edit_contact/:id', (req, res) => {
   });
 });
 
-app.post('/save-form', (req, res) => {
+app.post('/save-contact', (req, res) => {
   const { firstname, lastname } = req.body;
   const new_user = User.build({ firstName: firstname, lastName: lastname });
   new_user.save();
   res.redirect('/');
 });
 
-app.post('/update-form', (req, res) => {
+app.post('/update-contact', (req, res) => {
   const { id, firstname, lastname } = req.body;
   console.log(`${id} ${firstname} and ${lastname}`);
   User.update(
